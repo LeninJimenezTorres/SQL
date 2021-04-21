@@ -4,9 +4,9 @@
 
 In this webbside you can find a brief but concise abstract about the context of SQL language.
 
-## IDENTIFIERS
+## 1. IDENTIFIERS
 
-### BEGIN WITH:
+### A) BEGIN WITH:
 
 The name or identifier should begin with:
 
@@ -17,7 +17,7 @@ The name or identifier should begin with:
  
  The two last are considered like special characters to other target, because this it is prefered not used them, but thay are allowed.
 
-### SUBSEQUENT CHARACTERS:
+### B) SUBSEQUENT CHARACTERS:
 
 They are allowed:
 
@@ -25,7 +25,7 @@ They are allowed:
 - Numbers
 - @, _, #, $
 
-### NOT ALLOWED
+### C) NOT ALLOWED
 
 - Not with "DATABASE"
 - Not with "TABLE"
@@ -34,11 +34,11 @@ They are allowed:
 - Not spaces
 - Not another special characters
 
-### MAXIMUM LENGTH
+### D) MAXIMUM LENGTH
 
 The identifiers should have less of 128 characters.
 
-### ADVISES
+### E) ADVICES
 
 Use:
 
@@ -51,33 +51,185 @@ Avoid:
 - Avoid use delimited identifiers, for instance: [My table]
 
 
-## DATA TYPES
 
+## 2. DATA TYPES
 
+### A) CHARACTERS
+
+#### a.1) Char 
 ```markdown
-Syntax highlighted code block
+Command: `char(n)`
+```
+Details: 
+           - [1-8000] bytes
+           - Fixed length
+           - Non Unicode
 
-# Header 1
-## Header 2
-### Header 3
+#### a.2) Varchar 
+```markdown
+Command: `varchar(n)`
+```
+Details: 
+           - [1-8000] bytes
+           - Variable length
+           - Non Unicode
 
-- Bulleted
-- List
+#### a.3) Nchar 
+```markdown
+Command: `nchar(n)`
+```
+Details: 
+           - [1-4000] bytes
+           - Fixed length
+           - Unicode
 
-1. Numbered
-2. List
+#### a.4) Nvarchar 
+```markdown
+Command: `nvarchar(n)`
+```
+Details: 
+           - [1-4000] bytes
+           - Variable length
+           - Unicode
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+
+### B) INTEGERS
+
+#### b.1) Tiny integer 
+```markdown
+Command: `TINYINT`
+```
+Details: 
+           - 1 bytes
+           - 0-255
+
+#### b.2) Small integer
+```markdown
+Command: `SMALLINT`
+```
+Details: 
+           - 2 bytes
+           - [-2^15 to 2^15 -1]
+           - [-32k to 32k]
+
+#### b.3) Integer 
+```markdown
+Command: `INT`
+```
+Details: 
+           - 4 bytes
+           - [-2^31 to 2^31 -1]
+           - [+- 2,1 billons]
+          
+#### b.4) Big integer
+```markdown
+Command: `BIGINT`
+```
+Details: 
+           - 8 bytes
+           - [-2^63 to 2^63 -1]
+           - [+- 9,2 billon]
+           - max 19 digits integers or decimals
+
+
+
+### C) DECIMAL
+
+#### c.1) Decimal/Numeric 
+```markdown
+Command: `DECIMAL[(p),(s)] 
+          NUMERIC[(p),(s)]`
+          
+          p: precision, is all numbers both integer and decimal parts 
+          s: scalae, is only the decimal part
+```
+Details: 
+           - [5-17] bytes
+
+#### c.2) Money
+```markdown
+Command: `MONEY`
+```
+Details: 
+           - 8 bytes
+           - 8 decimals
+
+#### c.3) Small money 
+```markdown
+Command: `SMALLMONEY`
+```
+Details: 
+           - 4 bytes
+           - 4 decimals
+
+
+### D) TIME
+
+#### d.1) Data 
+```markdown
+Command: `DATA`
+```
+Details: 
+           - 3 bytes
+           - [0001-01-01 to 9999-12-31]
+
+
+#### d.2) Time
+```markdown
+Command: `TIME[(n)]`
+
+        n: fractional seconds - 7 default
+```
+Details: 
+           - 5 bytes
+
+
+#### d.3) Data time 
+```markdown
+Command: `DATATIME`
+```
+Details: 
+           - 8 bytes
+           - [January 1, 1753 to Dec 31, 9999]
+ 
+ 
+#### d.4) Small data 
+```markdown
+Command: `SMALLDATA`
+```
+Details: 
+           - 4 bytes
+           - [Jan 1, 1990 to Jan 6, 2079]
+           - Non fractional seconds
+           
+           
+#### d.5) Data time 2 
+```markdown
+Command: `DATATIME2(n)`
+```
+Details: 
+           - [2 - 6] bytes
+           - [0001-01-01 to 9999-12-31]
+           
+
+## 3. CREATE DATABASE
+```markdown
+              `CREATE DATABASE __________;`
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+## 4. SET DATABASE
+```markdown
+              `USE __________;`
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LeninJimenezTorres/SQL/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+## 5. CREATE TABLE
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Here you have to define the columns of the table and the 
+
+```markdown
+              `CREATE TABLE __________;`
+```
+
