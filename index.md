@@ -230,6 +230,10 @@ Details:
 Here you have to define the columns of the table and the 
 
 ```markdown
-              `CREATE TABLE __________;`
+              ` CREATE TABLE _______
+              (idIdentifier1 INTEGER PRIMARY KEY, 
+              Column2 CHAR(40),
+              Column3 FLOAT                      
+              ); `
 ```
 
