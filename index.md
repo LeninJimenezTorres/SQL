@@ -6,16 +6,53 @@ In this webbside you can find a brief but concise abstract about the context of 
 
 ## IDENTIFIERS
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 ### BEGIN WITH:
+
 The name or identifier should begin with:
+
 - A letter
 - Underscore ( _ )
-- At sign ( @ )
-- Number sign or Hash ( # )
+- At sign ( @ ), used for variables on TransactSQL.
+- Number sign or Hash ( # ), used for objects tempdb.
  
  The two last are considered like special characters to other target, because this it is prefered not used them, but thay are allowed.
- 
+
+### SUBSEQUENT CHARACTERS:
+
+They are allowed:
+
+- Letters
+- Numbers
+- @, _, #, $
+
+### NOT ALLOWED
+
+- Not with "DATABASE"
+- Not with "TABLE"
+- Not with "SCHEMA"
+- Not with "COLUMN"
+- Not spaces
+- Not another special characters
+
+### MAXIMUM LENGTH
+
+The identifiers should have less of 128 characters.
+
+### ADVISES
+
+Use:
+
+- CamelCase, for instance: LordMortem
+- Underscore separate, for instance: my_table
+- Hybrid with the both two last, for instance: My_Table
+
+Avoid:
+
+- Avoid use delimited identifiers, for instance: [My table]
+
+
+## DATA TYPES
+
 
 ```markdown
 Syntax highlighted code block
