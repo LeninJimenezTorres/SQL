@@ -1,12 +1,21 @@
 # ALL ABOUT SQL
 
-You can use the [editor on GitHub](https://github.com/LeninJimenezTorres/SQL/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[editor on GitHub](https://github.com/LeninJimenezTorres/SQL/edit/gh-pages/index.md)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In this webbside you can find a brief but concise abstract about the context of SQL language.
 
-### Markdown
+## IDENTIFIERS
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### BEGIN WITH:
+The name or identifier should begin with:
+- A letter
+- Underscore ( _ )
+- At sign ( @ )
+- Number sign or Hash ( # )
+ 
+ The two last are considered like special characters to other target, because this it is prefered not used them, but thay are allowed.
+ 
 
 ```markdown
 Syntax highlighted code block
