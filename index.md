@@ -243,4 +243,4 @@ Here you have to define the columns of the table and the
 Lenin Jiménez Torres
 
 ### Support or Contact
-[LinkedIn:](https://www.linkedin.com/in/lenin-jim%C3%A9nez-ba9251134/)
+[LinkedIn](https://www.linkedin.com/in/lenin-jim%C3%A9nez-ba9251134/)
