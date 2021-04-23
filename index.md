@@ -242,5 +242,5 @@ Here you have to define the columns of the table and the
 # Autor:
 Lenin Jiménez Torres
 
-
-Thanks
+### Support or Contact
+[LinkedIn:](https://www.linkedin.com/in/lenin-jim%C3%A9nez-ba9251134/)
