@@ -218,14 +218,17 @@ Details:
               `CREATE DATABASE __________;`
 ```
 
+## 4. BORRAR DATABASE
+```markdown
+              `DROP DATABASE __________;`
+```
 
-## 4. SET DATABASE
+## 5. SET DATABASE TO USE IT
 ```markdown
               `USE __________;`
 ```
 
-
-## 5. CREATE TABLE
+## 6. CREATE TABLE
 
 Here you have to define the columns of the table and the 
 
@@ -237,7 +240,12 @@ Here you have to define the columns of the table and the
               ); `
 ```
 
-## 6. MODIFY PRIMARY KEY
+## 7. DELETE TABLE
+```markdown
+              `DROP TABLE __________;`
+```
+
+## 8. MODIFY PRIMARY KEY
 
 First off, you have to delete the constaint:
 ```markdown
@@ -246,7 +254,7 @@ First off, you have to delete the constaint:
 After this, you can modify the primary kay with the next comand
 
 
-## 7. MODIFY ATTRIBUTES OF A COLUMN
+## 9. MODIFY ATTRIBUTES OF A COLUMN
 
 Here you can use any attribute option with the next command:
 ```markdown
@@ -258,7 +266,7 @@ Here you can use any attribute option with the next command:
                             ALTER COLUMN Id_Doctores INTEGER NOT NULL
 ```
 
-## 8. ADD A COLUMN
+## 10. ADD A COLUMN
 
 ```markdown
              ALTER TABLE ________ ADD _______  _________ (attribute options)
@@ -266,6 +274,9 @@ Here you can use any attribute option with the next command:
              For instance:
                             ALTER TABLE Doctor ADD Id_Doctores PRIMARY KEY NOT NULL
 ```
+
+
+
 
 
 # Autor:
