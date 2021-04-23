@@ -237,6 +237,35 @@ Here you have to define the columns of the table and the
               ); `
 ```
 
+## 6. MODIFY PRIMARY KEY
+
+First off, you have to delete the constaint:
+```markdown
+             ALTER TABLE ________ DROP CONSTRAINT _______(Primary Kay into Keys Folder)_______ 
+```
+After this, you can modify the primary kay with the next comand
+
+
+## 7. MODIFY ATTRIBUTES OF A COLUMN
+
+Here you can use any attribute option with the next command:
+```markdown
+             ALTER TABLE ________
+             ALTER COLUMN ________ ________ (attribute options)
+             
+             For instance:
+                            ALTER TABLE Doctors
+                            ALTER COLUMN Id_Doctores INTEGER NOT NULL
+```
+
+## 8. ADD A COLUMN
+
+```markdown
+             ALTER TABLE ________ ADD _______  _________ (attribute options)
+             
+             For instance:
+                            ALTER TABLE Doctor ADD Id_Doctores PRIMARY KEY NOT NULL
+```
 
 
 # Autor:
