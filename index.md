@@ -275,7 +275,19 @@ Here you can use any attribute option with the next command:
                             ALTER TABLE Doctor ADD Id_Doctores PRIMARY KEY NOT NULL
 ```
 
+## Manipulando los datos.
 
+   - SELECT: used to read or search data.
+   
+   - INSERT: used to add new data.
+   
+   - UPDATE: used to change available data.
+   
+   - DELETE: used to delete data available.
+   
+   - REPLACE: used to change or replace data available.
+   
+   - TRUNCATE: used to delete all data in the current template. 
 
 
 
