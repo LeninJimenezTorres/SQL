@@ -305,6 +305,27 @@ Here you can use any attribute option with the next command:
    - DROP TABLE: used to delete a whole table.
 
 
+## CLAUSES
+
+They are conditions of modification used to define desirable data to select or modify. 
+
+```markdown
+         
+         Command      Description
+
+         FROM 	       Used to select the table wich changes will do
+         
+         GROUP BY 	   Used to separate the data or records into groups
+         
+         HAVING 	     used to specify a condition taht each group must satisfy
+         
+         ORDER BY 	   Used to order the records in a specific way 
+         
+         WHERE 	      used to determine the selected records in the FROM clause.
+         
+```
+
+
 
 
 # Autor:
