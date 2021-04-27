@@ -275,7 +275,8 @@ Here you can use any attribute option with the next command:
                             ALTER TABLE Doctor ADD Id_Doctores PRIMARY KEY NOT NULL
 ```
 
-## Manipulando los datos.
+
+## MANIPULATING DATA.
 
    - SELECT: used to read or search data.
    
@@ -288,6 +289,21 @@ Here you can use any attribute option with the next command:
    - REPLACE: used to change or replace data available.
    
    - TRUNCATE: used to delete all data in the current template. 
+
+
+
+## DEFINING HOW DATA IS STORED.
+   
+   - CREATE DATABASE: used to create a new void database.
+   
+   - DROP DATABASE: used to delete a whole database.
+   
+   - CREATE TABLE: used to create a new database and its parameters at the same time.
+   
+   - ALTER TABLE: used to change a parameter or restriction in a available table.
+   
+   - DROP TABLE: used to delete a whole table.
+
 
 
 
